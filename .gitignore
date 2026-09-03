@@ -1,9 +1,4 @@
-node_modules/
-.env
-uploads/*
-!uploads/.gitkeep
-coverage/
 .DS_Store
-*.log
 .idea/
 .vscode/
+*.log

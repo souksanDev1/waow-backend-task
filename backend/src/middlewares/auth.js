@@ -23,7 +23,7 @@ const requireTempToken = (req, res, next) => {
 
     req.tempAuth = payload;
     return next();
-  } catch (error) {
+  } catch {
     return fail(res, 'AUTH_ERR_UNAUTHORIZED', 'Invalid or expired token', 401);
   }
 };
@@ -42,7 +42,7 @@ const requireAccessToken = (req, res, next) => {
 
     req.auth = payload;
     return next();
-  } catch (error) {
+  } catch {
     return fail(res, 'AUTH_ERR_UNAUTHORIZED', 'Invalid or expired token', 401);
   }
 };
